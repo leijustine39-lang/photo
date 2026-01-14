@@ -85,8 +85,12 @@ h1 i {
 }
 
 /*Positions each window into an X*/
-
-
+.window:nth-child(1){ translate: 16vw 50vh;
+}
+.window:nth-child(3){ translate: 0 20vh;
+}
+.window:nth-child(5){ translate: -16vw 50vh;
+}
 
 .window-frame {
     position: absolute;
@@ -254,4 +258,5 @@ h1 i {
         padding: 1.5rem;
     }
 }
+
 
