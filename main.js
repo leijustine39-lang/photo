@@ -29,20 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 revealContent.style.zIndex = '3';
                 const windowId = this.id;
                 switch(windowId) {
-                    case 'window1':
-                        revealContent.style.clipPath = 'circle(100% at 50% 50%)';
-                        break;
-                    case 'window2':
+                    case 'window':
                         revealContent.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
-                        break;
-                    case 'window3':
-                        revealContent.style.clipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
-                        break;
-                    case 'window4':
-                        revealContent.style.transform = 'translateX(0)';
-                        break;
-                    case 'window5':
-                        revealContent.style.opacity = '1';
                         break;
                 }
             } else {
