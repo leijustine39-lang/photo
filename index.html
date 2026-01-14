@@ -1,0 +1,106 @@
+
+Ipinadala mo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Hover Gallery</title>
+    <link rel="stylesheet" href="pic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-window-restore"></i> Window Hover Gallery</h1>
+            <p class="subtitle">Hover over each window to reveal the hidden picture</p>
+            <div class="instructions">
+                <p><i class="fas fa-mouse-pointer"></i> Move your cursor over any window to see the image</p>
+                <p><i class="fas fa-info-circle"></i> Each window has a different reveal animation</p>
+            </div>
+        </header>
+        
+        <main class="gallery">
+            <div class="window-container">
+                <div class="window" id="window1">
+                    <div class="window-frame">
+                        <div class="window-title">Window 1</div>
+                        <div class="window-glass"></div>
+                        <div class="window-sill"></div>
+                    </div>
+                    <div class="reveal-content">
+                        <img src="roy.jpeg" alt="Roy" class="reveal-image" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+                        <div class="image-label">Classic Reveal</div>
+                    </div>
+                </div>
+                
+                <div class="window" id="window2">
+                    <div class="window-frame">
+                        <div class="window-title">Window 2</div>
+                        <div class="window-glass"></div>
+                        <div class="window-sill"></div>
+                    </div>
+                    <div class="reveal-content">
+                        <img src="ivan.jpg" alt="ivan" class="reveal-image" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+                        <div class="image-label">Curtain Open</div>
+                    </div>
+                </div>
+                
+                <div class="window" id="window3">
+                    <div class="window-frame">
+                        <div class="window-title">Window 3</div>
+                        <div class="window-glass"></div>
+                        <div class="window-sill"></div>
+                    </div>
+                    <div class="reveal-content">
+                        <img src="kent.jpg" alt="kent" class="reveal-image" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+                        <div class="image-label">Blinds Up</div>
+                    </div>
+                </div>
+                
+                <div class="window" id="window4">
+                    <div class="window-frame">
+                        <div class="window-title">Window 4</div>
+                        <div class="window-glass"></div>
+                        <div class="window-sill"></div>
+                    </div>
+                    <div class="reveal-content">
+                        <img src="Wow.jpeg" alt="Wow" class="reveal-image" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+                        <div class="image-label">Slide Open</div>
+                    </div>
+                </div>
+                
+                <div class="window" id="window5">
+                    <div class="window-frame">
+                        <div class="window-title">Window 5</div>
+                        <div class="window-glass"></div>
+                        <div class="window-sill"></div>
+                    </div>
+                    <div class="reveal-content">
+                        <img src="ict.jpeg" alt="ICT" class="reveal-image" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80'">
+                        <div class="image-label">Fade In</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="revealAllBtn" class="control-btn">
+                    <i class="fas fa-eye"></i> Reveal All Windows
+                </button>
+                <button id="hideAllBtn" class="control-btn">
+                    <i class="fas fa-eye-slash"></i> Hide All Windows
+                </button>
+                <div class="hint">
+                    <i class="fas fa-lightbulb"></i> <strong>Note:</strong> Enjoy Our entrep project.
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>Window Hover Gallery &copy; 2023 | Created with HTML, CSS & JavaScript</p>
+        </footer>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
